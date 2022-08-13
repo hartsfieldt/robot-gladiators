@@ -52,44 +52,11 @@ var fight = function(enemyName) {
       break;
     } else {
       window.alert(playerName + ' still has ' + playerHealth + ' health left.');
-
-        playerMoney = playerMoney - 10;
-        console.log("playerMoney", playerMoney)
-        break;
       }
     }
-
-    enemyHealth = enemyHealth - playerAttack;
-    console.log(
-      playerName + ' attacked ' + enemyName + '. ' + enemyName + ' now has ' + enemyHealth + ' health remaining.'
-    );
-
-    if (enemyHealth <= 0) {
-      window.alert(enemyName + ' has died!');
-
-      playerMoney = playerMoney + 20;
-
-      break;
-    } else {
-      window.alert(enemyName + ' still has ' + enemyHealth + ' health left.');
-    }
-
-    playerHealth = playerHealth - enemyAttack;
-    console.log(
-      enemyName + ' attacked ' + playerName + '. ' + playerName + ' now has ' + playerHealth + ' health remaining.'
-    );
-
-
-    if (playerHealth <= 0) {
-      window.alert(playerName + ' has died!');
-      break;
-    } else {
-      window.alert(playerName + ' still has ' + playerHealth + ' health left.');
-    }
-  }
+  };
 
 var startGame = function() {
-
   playerHealth = 100;
   playerAttack = 10;
   playerMoney = 10;
@@ -212,3 +179,9 @@ var shop = function() {
 };
 
 startGame();
+
+
+
+var math = function() {
+  console.log(math)
+}
